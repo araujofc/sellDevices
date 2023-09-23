@@ -4,10 +4,15 @@
  */
 package com.exemplo.springbootdeviceseller.service;
 
+import com.exemplo.springbootdeviceseller.model.User;
+import java.util.Optional;
+
 /**
  *
  * @author arauj
  */
 public interface UserService {
+
+    Optional<User> findByUsername(String username);
     
 }
